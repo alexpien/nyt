@@ -1,4 +1,4 @@
-var requester = require('./services/requester');
+var requester = require('./requester');
 function nyt (keys) {
     var keys = keys;
 
