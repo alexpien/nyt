@@ -9,13 +9,6 @@ function article (keys) {
 	this.myKeys = keys;
 }
 
-function requester(keys, based , specific, keyname) {
-    return function(args, callback) {
-	console.log(keys);
-	reql.createRequest(args, callback, keys, based, specific, keyname);
-    }
-	
-}
  
 article.prototype.search = requester('cfa0057409bd98c30e611427a881555b:15:60978845',base,'');
 

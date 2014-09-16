@@ -41,11 +41,13 @@ var buildPath = function(params) {
   	return path;
 }
 
-var createRequest = function (args, callback, key, base, specific) {
+var createRequest = function (args, callback, myKeys, base, specific, keyName) {
     if (!callback) {
         callback = args;
         args = undefined;
     }
+
+    var key = myKeys[keyName];
     var format = response_lib.checkField(args['format'], constants.DEFAULT);
     var query = response_lib.checkQuery(args);
 

@@ -1,0 +1,12 @@
+var response_lib = require('../lib/response_lib');
+var reql = require('../lib/request_lib');
+
+function requester(key, based , specific, keyname) {
+    return function(args, callback) {
+	console.log(keys);
+	reql.createRequest(args, callback, keys, based, specific, keyname);
+    }
+	
+}
+ 
+module.exports = requster;

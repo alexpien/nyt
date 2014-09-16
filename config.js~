@@ -1,0 +1,9 @@
+var config = {
+    'article-search' : {
+	'base' : '/svc/search/v2/articlesearch',
+	'specific' : ''
+    }
+
+};
+
+module.exports = config;
